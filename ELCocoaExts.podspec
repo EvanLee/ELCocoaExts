@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'ViewExts' do |ss|
     ss.source_files = 'ELCocoaExts/ELViewExts/**/*.{h,m}'
-    ss.public_header_files = 'ELCocoaExts/ELViewExts/ELViewExts.h'
+    ss.public_header_files = 'ELCocoaExts/ELViewExts/ELViewExts.h', 'ELCocoaExts/ELViewExts/**/*.h'
   end
 
   s.subspec 'StringExts' do |ss|
