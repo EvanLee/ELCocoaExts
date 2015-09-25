@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */; };
+		204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D211BB538C3009046BD /* NSString+Exts.m */; };
+		204E9D2D1BB53934009046BD /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D261BB53934009046BD /* UIView+Effects.m */; };
+		204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D291BB53934009046BD /* UIView+Events.m */; };
+		204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D2C1BB53934009046BD /* UIView+Layout.m */; };
+		204E9D331BB53C9A009046BD /* NSDictionary+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */; };
 		20C4099A1BB408DE00F1D36A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C409981BB408DE00F1D36A /* Main.storyboard */; };
 		20C4099C1BB408DE00F1D36A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099B1BB408DE00F1D36A /* Images.xcassets */; };
 		20C4099F1BB408DE00F1D36A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099D1BB408DE00F1D36A /* LaunchScreen.xib */; };
@@ -14,8 +20,6 @@
 		20C409BC1BB4093B00F1D36A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409B61BB4093B00F1D36A /* AppDelegate.m */; };
 		20C409BD1BB4093B00F1D36A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409B71BB4093B00F1D36A /* main.m */; };
 		20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409BB1BB4093B00F1D36A /* ViewController.m */; };
-		20C409C91BB4096800F1D36A /* UIView+Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409C51BB4096800F1D36A /* UIView+Events.m */; };
-		20C409CA1BB4096800F1D36A /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409C81BB4096800F1D36A /* UIView+Layout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204E9D171BB536DF009046BD /* ELDictExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELDictExts.h; sourceTree = "<group>"; };
+		204E9D1D1BB538C3009046BD /* NSString+DotNetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DotNetStyle.h"; sourceTree = "<group>"; };
+		204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DotNetStyle.m"; sourceTree = "<group>"; };
+		204E9D201BB538C3009046BD /* NSString+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Exts.h"; sourceTree = "<group>"; };
+		204E9D211BB538C3009046BD /* NSString+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exts.m"; sourceTree = "<group>"; };
+		204E9D251BB53934009046BD /* UIView+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Effects.h"; sourceTree = "<group>"; };
+		204E9D261BB53934009046BD /* UIView+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Effects.m"; sourceTree = "<group>"; };
+		204E9D281BB53934009046BD /* UIView+Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Events.h"; sourceTree = "<group>"; };
+		204E9D291BB53934009046BD /* UIView+Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Events.m"; sourceTree = "<group>"; };
+		204E9D2B1BB53934009046BD /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		204E9D2C1BB53934009046BD /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		204E9D311BB53C9A009046BD /* NSDictionary+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Exts.h"; sourceTree = "<group>"; };
+		204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Exts.m"; sourceTree = "<group>"; };
+		204E9D341BB53CF6009046BD /* ELCocoaExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCocoaExts.h; sourceTree = "<group>"; };
 		20C4098B1BB408DE00F1D36A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C4098F1BB408DE00F1D36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		20C409991BB408DE00F1D36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,10 +61,7 @@
 		20C409BA1BB4093B00F1D36A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		20C409BB1BB4093B00F1D36A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20C409C21BB4096800F1D36A /* ELViewExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELViewExts.h; sourceTree = "<group>"; };
-		20C409C41BB4096800F1D36A /* UIView+Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Events.h"; sourceTree = "<group>"; };
-		20C409C51BB4096800F1D36A /* UIView+Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Events.m"; sourceTree = "<group>"; };
-		20C409C71BB4096800F1D36A /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
-		20C409C81BB4096800F1D36A /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		20F53A9E1BB4F60700C52E5E /* ELStringExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELStringExts.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +82,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204E9D161BB536BE009046BD /* ELDictExts */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D301BB53C9A009046BD /* DictionaryExts */,
+				204E9D171BB536DF009046BD /* ELDictExts.h */,
+			);
+			path = ELDictExts;
+			sourceTree = "<group>";
+		};
+		204E9D1C1BB538C3009046BD /* DotNetStyle */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D1D1BB538C3009046BD /* NSString+DotNetStyle.h */,
+				204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */,
+			);
+			path = DotNetStyle;
+			sourceTree = "<group>";
+		};
+		204E9D1F1BB538C3009046BD /* StringExts */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D201BB538C3009046BD /* NSString+Exts.h */,
+				204E9D211BB538C3009046BD /* NSString+Exts.m */,
+			);
+			path = StringExts;
+			sourceTree = "<group>";
+		};
+		204E9D241BB53934009046BD /* EffectsExts */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D251BB53934009046BD /* UIView+Effects.h */,
+				204E9D261BB53934009046BD /* UIView+Effects.m */,
+			);
+			path = EffectsExts;
+			sourceTree = "<group>";
+		};
+		204E9D271BB53934009046BD /* EventsExts */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D281BB53934009046BD /* UIView+Events.h */,
+				204E9D291BB53934009046BD /* UIView+Events.m */,
+			);
+			path = EventsExts;
+			sourceTree = "<group>";
+		};
+		204E9D2A1BB53934009046BD /* LayoutExts */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D2B1BB53934009046BD /* UIView+Layout.h */,
+				204E9D2C1BB53934009046BD /* UIView+Layout.m */,
+			);
+			path = LayoutExts;
+			sourceTree = "<group>";
+		};
+		204E9D301BB53C9A009046BD /* DictionaryExts */ = {
+			isa = PBXGroup;
+			children = (
+				204E9D311BB53C9A009046BD /* NSDictionary+Exts.h */,
+				204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */,
+			);
+			path = DictionaryExts;
+			sourceTree = "<group>";
+		};
 		20C409821BB408DE00F1D36A = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +216,9 @@
 		20C409BF1BB4096800F1D36A /* ELCocoaExts */ = {
 			isa = PBXGroup;
 			children = (
+				204E9D341BB53CF6009046BD /* ELCocoaExts.h */,
+				204E9D161BB536BE009046BD /* ELDictExts */,
+				20F53A9D1BB4F5B900C52E5E /* ELStringExts */,
 				20C409C01BB4096800F1D36A /* ELViewExts */,
 			);
 			name = ELCocoaExts;
@@ -147,37 +228,12 @@
 		20C409C01BB4096800F1D36A /* ELViewExts */ = {
 			isa = PBXGroup;
 			children = (
+				204E9D241BB53934009046BD /* EffectsExts */,
+				204E9D271BB53934009046BD /* EventsExts */,
+				204E9D2A1BB53934009046BD /* LayoutExts */,
 				20C409C21BB4096800F1D36A /* ELViewExts.h */,
-				20C409C11BB4096800F1D36A /* EffectsExtension */,
-				20C409C31BB4096800F1D36A /* EventsExtensions */,
-				20C409C61BB4096800F1D36A /* LayoutExtensions */,
 			);
 			path = ELViewExts;
-			sourceTree = "<group>";
-		};
-		20C409C11BB4096800F1D36A /* EffectsExtension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EffectsExtension;
-			sourceTree = "<group>";
-		};
-		20C409C31BB4096800F1D36A /* EventsExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				20C409C41BB4096800F1D36A /* UIView+Events.h */,
-				20C409C51BB4096800F1D36A /* UIView+Events.m */,
-			);
-			path = EventsExtensions;
-			sourceTree = "<group>";
-		};
-		20C409C61BB4096800F1D36A /* LayoutExtensions */ = {
-			isa = PBXGroup;
-			children = (
-				20C409C71BB4096800F1D36A /* UIView+Layout.h */,
-				20C409C81BB4096800F1D36A /* UIView+Layout.m */,
-			);
-			path = LayoutExtensions;
 			sourceTree = "<group>";
 		};
 		20C409CB1BB4099600F1D36A /* Resources */ = {
@@ -186,6 +242,16 @@
 				20C4098F1BB408DE00F1D36A /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		20F53A9D1BB4F5B900C52E5E /* ELStringExts */ = {
+			isa = PBXGroup;
+			children = (
+				20F53A9E1BB4F60700C52E5E /* ELStringExts.h */,
+				204E9D1C1BB538C3009046BD /* DotNetStyle */,
+				204E9D1F1BB538C3009046BD /* StringExts */,
+			);
+			path = ELStringExts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +357,12 @@
 				20C409BC1BB4093B00F1D36A /* AppDelegate.m in Sources */,
 				20C409BD1BB4093B00F1D36A /* main.m in Sources */,
 				20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */,
-				20C409CA1BB4096800F1D36A /* UIView+Layout.m in Sources */,
-				20C409C91BB4096800F1D36A /* UIView+Events.m in Sources */,
+				204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */,
+				204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */,
+				204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */,
+				204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */,
+				204E9D2D1BB53934009046BD /* UIView+Effects.m in Sources */,
+				204E9D331BB53C9A009046BD /* NSDictionary+Exts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +561,7 @@
 				20C409B01BB408DE00F1D36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C409B11BB408DE00F1D36A /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +570,7 @@
 				20C409B31BB408DE00F1D36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,6 @@
 //
 //  UIView+Events.h
-//  ELViewExt
+//  ELCocoaExts
 //
 //  Created by Evan on 13/9/24.
 //  Copyright (c) 2013年 WewaySoft. All rights reserved.
