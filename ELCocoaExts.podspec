@@ -25,23 +25,23 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/EvanLee/ELCocoaExts.git", :tag => s.version, :submodules => true }
 
  
-  #s.source_files  = "ELCocoaExts/**/*.{h,m}"
+  # s.source_files  = "ELCocoaExts/**/*.{h,m}"
   # s.public_header_files = "Classes/**/*.h"
 
   s.requires_arc = true
 
   s.subspec 'ViewExts' do |ss|
-    ss.source_files = 'ELCocoaExts/ELViewExts/*.{h,m}'
+    ss.source_files = 'ELCocoaExts/ELViewExts/**/*.{h,m}'
     ss.public_header_files = 'ELCocoaExts/ELViewExts/ELViewExts.h'
   end
 
   s.subspec 'StringExts' do |ss|
-    ss.source_files = 'ELCocoaExts/ELStringExts/*.{h,m}'
+    ss.source_files = 'ELCocoaExts/ELStringExts/**/*.{h,m}'
     ss.public_header_files = 'ELCocoaExts/ELStringExts/ELStringExts.h'
   end
 
   s.subspec 'DictExts' do |ss|
-    ss.source_files = 'ELCocoaExts/ELDictExts/*.{h,m}'
+    ss.source_files = 'ELCocoaExts/ELDictExts/**/*.{h,m}'
     ss.public_header_files = 'ELCocoaExts/ELDictExts/ELDictExts.h'
   end
 
