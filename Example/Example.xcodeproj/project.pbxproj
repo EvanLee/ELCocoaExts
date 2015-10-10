@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AF9441BC80C740061F372 /* ELScopeExts.m */; settings = {ASSET_TAGS = (); }; };
 		204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */; };
 		204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D211BB538C3009046BD /* NSString+Exts.m */; };
 		204E9D2D1BB53934009046BD /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D261BB53934009046BD /* UIView+Effects.m */; };
@@ -33,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203AF9431BC80C740061F372 /* ELScopeExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELScopeExts.h; sourceTree = "<group>"; };
+		203AF9441BC80C740061F372 /* ELScopeExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELScopeExts.m; sourceTree = "<group>"; };
+		203AF9481BC8A89F0061F372 /* ELExtsmetamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELExtsmetamacros.h; sourceTree = "<group>"; };
 		204E9D171BB536DF009046BD /* ELDictExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELDictExts.h; sourceTree = "<group>"; };
 		204E9D1D1BB538C3009046BD /* NSString+DotNetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DotNetStyle.h"; sourceTree = "<group>"; };
 		204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DotNetStyle.m"; sourceTree = "<group>"; };
@@ -82,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203AF9421BC80BC50061F372 /* ELGlobalExts */ = {
+			isa = PBXGroup;
+			children = (
+				203AF9481BC8A89F0061F372 /* ELExtsmetamacros.h */,
+				203AF9431BC80C740061F372 /* ELScopeExts.h */,
+				203AF9441BC80C740061F372 /* ELScopeExts.m */,
+			);
+			path = ELGlobalExts;
+			sourceTree = "<group>";
+		};
 		204E9D161BB536BE009046BD /* ELDictExts */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				204E9D341BB53CF6009046BD /* ELCocoaExts.h */,
+				203AF9421BC80BC50061F372 /* ELGlobalExts */,
 				204E9D161BB536BE009046BD /* ELDictExts */,
 				20F53A9D1BB4F5B900C52E5E /* ELStringExts */,
 				20C409C01BB4096800F1D36A /* ELViewExts */,
@@ -355,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20C409BC1BB4093B00F1D36A /* AppDelegate.m in Sources */,
+				203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */,
 				20C409BD1BB4093B00F1D36A /* main.m in Sources */,
 				20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */,
 				204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */,

@@ -10,7 +10,7 @@
 #import "ELCocoaExts.h"
 
 @interface ViewController ()
-
+@property (nonatomic, assign) BOOL isWork;
 @end
 
 @implementation ViewController
@@ -18,6 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    dispatch_onMain_with_delay(1.f, ^{
+        
+    });
+    
+    dispatch_onMain_async_safely(^{
+        
+    });
+    
+    @weakifySelf(wSelf);
+    [UIView animateWithDuration:0.1f animations:^{
+        wSelf.isWork = YES;
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
