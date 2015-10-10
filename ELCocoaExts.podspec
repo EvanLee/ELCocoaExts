@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'GlobalExts' do |ss|
     ss.source_files = 'ELCocoaExts/ELGlobalExts/*.{h,m}'
-    ss.public_header_files = 'ELCocoaExts/ELGlobalExts/ELScopeExts.h'
+    ss.public_header_files = 'ELCocoaExts/ELGlobalExts/ELScopeExts.h', 'ELCocoaExts/ELGlobalExts/ELExtsmetamacros.h'
   end
 
 
