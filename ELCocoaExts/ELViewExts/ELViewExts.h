@@ -7,5 +7,6 @@
 //
 
 #import "UIView+Layout.h"
+#import "UIView+AutoLayout.h"
 #import "UIView+Events.h"
 #import "UIView+Effects.h"

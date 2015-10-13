@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AF9441BC80C740061F372 /* ELScopeExts.m */; settings = {ASSET_TAGS = (); }; };
+		203AFD101BCC9B0D0061F372 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AFD0F1BCC9B0D0061F372 /* UIView+AutoLayout.m */; settings = {ASSET_TAGS = (); }; };
 		204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */; };
 		204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D211BB538C3009046BD /* NSString+Exts.m */; };
 		204E9D2D1BB53934009046BD /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D261BB53934009046BD /* UIView+Effects.m */; };
@@ -37,6 +38,8 @@
 		203AF9431BC80C740061F372 /* ELScopeExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELScopeExts.h; sourceTree = "<group>"; };
 		203AF9441BC80C740061F372 /* ELScopeExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELScopeExts.m; sourceTree = "<group>"; };
 		203AF9481BC8A89F0061F372 /* ELExtsmetamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELExtsmetamacros.h; sourceTree = "<group>"; };
+		203AFD0E1BCC9B0D0061F372 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		203AFD0F1BCC9B0D0061F372 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 		204E9D171BB536DF009046BD /* ELDictExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELDictExts.h; sourceTree = "<group>"; };
 		204E9D1D1BB538C3009046BD /* NSString+DotNetStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DotNetStyle.h"; sourceTree = "<group>"; };
 		204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DotNetStyle.m"; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 			children = (
 				204E9D2B1BB53934009046BD /* UIView+Layout.h */,
 				204E9D2C1BB53934009046BD /* UIView+Layout.m */,
+				203AFD0E1BCC9B0D0061F372 /* UIView+AutoLayout.h */,
+				203AFD0F1BCC9B0D0061F372 /* UIView+AutoLayout.m */,
 			);
 			path = LayoutExts;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 				204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */,
 				204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */,
 				204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */,
+				203AFD101BCC9B0D0061F372 /* UIView+AutoLayout.m in Sources */,
 				204E9D2D1BB53934009046BD /* UIView+Effects.m in Sources */,
 				204E9D331BB53C9A009046BD /* NSDictionary+Exts.m in Sources */,
 			);
