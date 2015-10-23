@@ -35,6 +35,11 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'ELCocoaExts/ELViewExts/ELViewExts.h', 'ELCocoaExts/ELViewExts/**/*.h'
   end
 
+  s.subspec 'ViewControllerExts' do |ss|
+    ss.source_files = 'ELCocoaExts/ViewControllerExts/**/*.{h,m}'
+    ss.public_header_files = 'ELCocoaExts/ViewControllerExts/ELViewControllerExts.h', 'ELCocoaExts/ViewControllerExts/**/*.h'
+  end
+
   s.subspec 'StringExts' do |ss|
     ss.source_files = 'ELCocoaExts/ELStringExts/**/*.{h,m}'
     ss.public_header_files = 'ELCocoaExts/ELStringExts/ELStringExts.h', 'ELCocoaExts/ELStringExts/**/*.h'
@@ -50,10 +55,6 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'ELCocoaExts/ELGlobalExts/ELScopeExts.h', 'ELCocoaExts/ELGlobalExts/ELExtsmetamacros.h'
   end
 
-  s.subspec 'ViewControllerExts' do |ss|
-    ss.source_files = 'ELCocoaExts/ViewControllerExts/**/*.{h,m}'
-    ss.public_header_files = 'ELCocoaExts/ViewControllerExts/ELViewControllerExts.h', 'ELCocoaExts/ViewControllerExts/**/*.h'
-  end
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
