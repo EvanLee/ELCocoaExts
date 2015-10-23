@@ -41,7 +41,8 @@
 - (NSInteger)lastIndexOfString:(NSString*)str fromIndex:(NSInteger)index;
 
 - (BOOL)isEmpty;
-- (BOOL)contains:(NSString*) str;
+- (BOOL)contains:(NSString*)str;
+- (BOOL)contains:(NSString*)str ignoreCase:(BOOL)ignore;
 - (BOOL)startsWith:(NSString*)prefix;
 - (BOOL)endsWith:(NSString*)suffix;
 - (BOOL)equals:(NSString*) anotherString;

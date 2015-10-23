@@ -121,9 +121,16 @@
     return [self length] == 0;
 }
 
-- (BOOL)contains:(NSString*) str
+- (BOOL)contains:(NSString*)str
 {
     NSRange range = [self rangeOfString:str];
+    return (range.location != NSNotFound);
+}
+
+- (BOOL)contains:(NSString*)str ignoreCase:(BOOL)ignoreCase
+{
+    NSRange range = [self rangeOfString:str
+                                options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch];
     return (range.location != NSNotFound);
 }
 

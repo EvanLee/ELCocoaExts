@@ -15,6 +15,7 @@
 		204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D291BB53934009046BD /* UIView+Events.m */; };
 		204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D2C1BB53934009046BD /* UIView+Layout.m */; };
 		204E9D331BB53C9A009046BD /* NSDictionary+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */; };
+		209E67011BDA78540068BFF2 /* UIViewController+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E67001BDA78540068BFF2 /* UIViewController+Exts.m */; settings = {ASSET_TAGS = (); }; };
 		20C4099A1BB408DE00F1D36A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C409981BB408DE00F1D36A /* Main.storyboard */; };
 		20C4099C1BB408DE00F1D36A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099B1BB408DE00F1D36A /* Images.xcassets */; };
 		20C4099F1BB408DE00F1D36A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099D1BB408DE00F1D36A /* LaunchScreen.xib */; };
@@ -54,6 +55,9 @@
 		204E9D311BB53C9A009046BD /* NSDictionary+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Exts.h"; sourceTree = "<group>"; };
 		204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Exts.m"; sourceTree = "<group>"; };
 		204E9D341BB53CF6009046BD /* ELCocoaExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCocoaExts.h; sourceTree = "<group>"; };
+		209E66FE1BDA78190068BFF2 /* ELViewControllerExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELViewControllerExts.h; sourceTree = "<group>"; };
+		209E66FF1BDA78540068BFF2 /* UIViewController+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Exts.h"; sourceTree = "<group>"; };
+		209E67001BDA78540068BFF2 /* UIViewController+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Exts.m"; sourceTree = "<group>"; };
 		20C4098B1BB408DE00F1D36A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C4098F1BB408DE00F1D36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		20C409991BB408DE00F1D36A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +168,24 @@
 			path = DictionaryExts;
 			sourceTree = "<group>";
 		};
+		209E66FC1BDA77A30068BFF2 /* ELViewControllerExts */ = {
+			isa = PBXGroup;
+			children = (
+				209E66FD1BDA77A30068BFF2 /* ViewControllerExts */,
+				209E66FE1BDA78190068BFF2 /* ELViewControllerExts.h */,
+			);
+			path = ELViewControllerExts;
+			sourceTree = "<group>";
+		};
+		209E66FD1BDA77A30068BFF2 /* ViewControllerExts */ = {
+			isa = PBXGroup;
+			children = (
+				209E66FF1BDA78540068BFF2 /* UIViewController+Exts.h */,
+				209E67001BDA78540068BFF2 /* UIViewController+Exts.m */,
+			);
+			path = ViewControllerExts;
+			sourceTree = "<group>";
+		};
 		20C409821BB408DE00F1D36A = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +262,7 @@
 				204E9D161BB536BE009046BD /* ELDictExts */,
 				20F53A9D1BB4F5B900C52E5E /* ELStringExts */,
 				20C409C01BB4096800F1D36A /* ELViewExts */,
+				209E66FC1BDA77A30068BFF2 /* ELViewControllerExts */,
 			);
 			name = ELCocoaExts;
 			path = ../../ELCocoaExts;
@@ -374,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209E67011BDA78540068BFF2 /* UIViewController+Exts.m in Sources */,
 				20C409BC1BB4093B00F1D36A /* AppDelegate.m in Sources */,
 				203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */,
 				20C409BD1BB4093B00F1D36A /* main.m in Sources */,
