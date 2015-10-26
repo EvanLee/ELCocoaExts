@@ -23,7 +23,7 @@
                       color:(nonnull UIColor *)color
                     opacity:(CGFloat)opacity
 {
-    UIBezierPath *shadowPath = radius > 0 ?
+    UIBezierPath *shadowPath = radius <= 0.f ?
                                 [UIBezierPath bezierPathWithRect:self.bounds] :
                                 [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:radius];
     self.layer.masksToBounds = NO;
