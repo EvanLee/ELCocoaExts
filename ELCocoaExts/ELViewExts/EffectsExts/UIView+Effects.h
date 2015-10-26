@@ -10,7 +10,16 @@
 
 @interface UIView (Effects)
 
-- (void)addShadowWithOffset:(CGSize)offset color:(UIColor *)color opacity:(CGFloat)opacity;
+- (void)addShadowWithOffset:(CGSize)offset
+                      color:(nonnull UIColor *)color
+                    opacity:(CGFloat)opacity;
+
+- (void)addShadowWithOffset:(CGSize)offset
+                         cornerRadius:(CGFloat)radius
+                      color:(nonnull UIColor *)color
+                    opacity:(CGFloat)opacity;
+
+
 - (void)removeShadow;
 
 @end

@@ -10,11 +10,22 @@
 
 @implementation UIView (Effects)
 
-- (void)addShadowWithOffset:(CGSize)offset color:(UIColor *)color opacity:(CGFloat)opacity
+- (void)addShadowWithOffset:(CGSize)offset
+                      color:(nonnull UIColor *)color
+                    opacity:(CGFloat)opacity
 {
     [self removeShadow];
-    
-    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.bounds];
+    [self addShadowWithOffset:offset cornerRadius:0.f color:color opacity:opacity];
+}
+
+- (void)addShadowWithOffset:(CGSize)offset
+               cornerRadius:(CGFloat)radius
+                      color:(nonnull UIColor *)color
+                    opacity:(CGFloat)opacity
+{
+    UIBezierPath *shadowPath = radius > 0 ?
+                                [UIBezierPath bezierPathWithRect:self.bounds] :
+                                [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:radius];
     self.layer.masksToBounds = NO;
     self.layer.shadowColor = color.CGColor;
     self.layer.shadowOffset = offset;
