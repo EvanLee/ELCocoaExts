@@ -15,8 +15,8 @@
  *
  *  @param name nibName
  */
-- (void)registerNibWithName:(NSString *)nibName;
-- (void)registerNibWithName:(NSString *)nibName bundle:(NSBundle *)bundleOrNil;
+- (void)registerNibName:(NSString *)nibName;
+- (void)registerNibName:(NSString *)nibName bundle:(NSBundle *)bundleOrNil;
 
 /**
  *  注册重用类，默认采用类名做reuser identfer

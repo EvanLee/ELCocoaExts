@@ -12,14 +12,14 @@
 
 #pragma mark - Public Methods
 
-- (void)registerNibWithName:(NSString *)nibName bundle:(NSBundle *)bundleOrNil
+- (void)registerNibName:(NSString *)nibName bundle:(NSBundle *)bundleOrNil
 {
     [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:nibName];
 }
 
-- (void)registerNibWithName:(NSString *)nibName
+- (void)registerNibName:(NSString *)nibName
 {
-    [self registerNibWithName:nibName bundle:nil];
+    [self registerNibName:nibName bundle:nil];
 }
 
 - (void)registerClass:(Class)cellClass
