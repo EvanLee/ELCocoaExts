@@ -10,3 +10,5 @@
 #import "UIView+AutoLayout.h"
 #import "UIView+Events.h"
 #import "UIView+Effects.h"
+
+#import "UITableView+Exts.h"

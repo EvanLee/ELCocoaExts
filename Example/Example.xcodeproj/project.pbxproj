@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AF9441BC80C740061F372 /* ELScopeExts.m */; settings = {ASSET_TAGS = (); }; };
-		203AFD101BCC9B0D0061F372 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AFD0F1BCC9B0D0061F372 /* UIView+AutoLayout.m */; settings = {ASSET_TAGS = (); }; };
+		203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AF9441BC80C740061F372 /* ELScopeExts.m */; };
+		203AFD101BCC9B0D0061F372 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AFD0F1BCC9B0D0061F372 /* UIView+AutoLayout.m */; };
 		204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */; };
 		204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D211BB538C3009046BD /* NSString+Exts.m */; };
 		204E9D2D1BB53934009046BD /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D261BB53934009046BD /* UIView+Effects.m */; };
 		204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D291BB53934009046BD /* UIView+Events.m */; };
 		204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D2C1BB53934009046BD /* UIView+Layout.m */; };
 		204E9D331BB53C9A009046BD /* NSDictionary+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */; };
-		209E67011BDA78540068BFF2 /* UIViewController+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E67001BDA78540068BFF2 /* UIViewController+Exts.m */; settings = {ASSET_TAGS = (); }; };
+		209E67011BDA78540068BFF2 /* UIViewController+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E67001BDA78540068BFF2 /* UIViewController+Exts.m */; };
 		20C4099A1BB408DE00F1D36A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C409981BB408DE00F1D36A /* Main.storyboard */; };
 		20C4099C1BB408DE00F1D36A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099B1BB408DE00F1D36A /* Images.xcassets */; };
 		20C4099F1BB408DE00F1D36A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099D1BB408DE00F1D36A /* LaunchScreen.xib */; };
@@ -23,6 +23,7 @@
 		20C409BC1BB4093B00F1D36A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409B61BB4093B00F1D36A /* AppDelegate.m */; };
 		20C409BD1BB4093B00F1D36A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409B71BB4093B00F1D36A /* main.m */; };
 		20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C409BB1BB4093B00F1D36A /* ViewController.m */; };
+		20DFAF231BF187F7007B5D3F /* UITableView+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFAF221BF187F7007B5D3F /* UITableView+Exts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		20C409BA1BB4093B00F1D36A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		20C409BB1BB4093B00F1D36A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20C409C21BB4096800F1D36A /* ELViewExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELViewExts.h; sourceTree = "<group>"; };
+		20DFAF211BF187F7007B5D3F /* UITableView+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Exts.h"; sourceTree = "<group>"; };
+		20DFAF221BF187F7007B5D3F /* UITableView+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Exts.m"; sourceTree = "<group>"; };
 		20F53A9E1BB4F60700C52E5E /* ELStringExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELStringExts.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,6 +274,7 @@
 		20C409C01BB4096800F1D36A /* ELViewExts */ = {
 			isa = PBXGroup;
 			children = (
+				20DFAF201BF187CC007B5D3F /* TableViewExts */,
 				204E9D241BB53934009046BD /* EffectsExts */,
 				204E9D271BB53934009046BD /* EventsExts */,
 				204E9D2A1BB53934009046BD /* LayoutExts */,
@@ -285,6 +289,15 @@
 				20C4098F1BB408DE00F1D36A /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		20DFAF201BF187CC007B5D3F /* TableViewExts */ = {
+			isa = PBXGroup;
+			children = (
+				20DFAF211BF187F7007B5D3F /* UITableView+Exts.h */,
+				20DFAF221BF187F7007B5D3F /* UITableView+Exts.m */,
+			);
+			path = TableViewExts;
 			sourceTree = "<group>";
 		};
 		20F53A9D1BB4F5B900C52E5E /* ELStringExts */ = {
@@ -404,6 +417,7 @@
 				20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */,
 				204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */,
 				204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */,
+				20DFAF231BF187F7007B5D3F /* UITableView+Exts.m in Sources */,
 				204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */,
 				204E9D231BB538C3009046BD /* NSString+Exts.m in Sources */,
 				203AFD101BCC9B0D0061F372 /* UIView+AutoLayout.m in Sources */,
