@@ -42,7 +42,7 @@
 
 - (BOOL)isEmpty;
 - (BOOL)contains:(NSString*)str;
-- (BOOL)contains:(NSString*)str ignoreCase:(BOOL)ignore;
+- (BOOL)ignoreCaseContains:(NSString*)str;
 - (BOOL)startsWith:(NSString*)prefix;
 - (BOOL)endsWith:(NSString*)suffix;
 - (BOOL)equals:(NSString*) anotherString;

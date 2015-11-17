@@ -127,7 +127,7 @@
     return (range.location != NSNotFound);
 }
 
-- (BOOL)contains:(NSString*)str ignoreCase:(BOOL)ignoreCase
+- (BOOL)ignoreCaseContains:(NSString*)str 
 {
     NSRange range = [self rangeOfString:str
                                 options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch];
