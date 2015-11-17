@@ -11,4 +11,5 @@
 #import "ELStringExts.h"
 #import "ELScopeExts.h"
 #import "ELViewControllerExts.h"
+#import "ELErrorExts.h"
 

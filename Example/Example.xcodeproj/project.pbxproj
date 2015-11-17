@@ -15,6 +15,7 @@
 		204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D291BB53934009046BD /* UIView+Events.m */; };
 		204E9D2F1BB53934009046BD /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D2C1BB53934009046BD /* UIView+Layout.m */; };
 		204E9D331BB53C9A009046BD /* NSDictionary+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */; };
+		20918AD31BFB285C00887BF9 /* NSError+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 20918AD21BFB285C00887BF9 /* NSError+Exts.m */; };
 		209E67011BDA78540068BFF2 /* UIViewController+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 209E67001BDA78540068BFF2 /* UIViewController+Exts.m */; };
 		20C4099A1BB408DE00F1D36A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C409981BB408DE00F1D36A /* Main.storyboard */; };
 		20C4099C1BB408DE00F1D36A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C4099B1BB408DE00F1D36A /* Images.xcassets */; };
@@ -56,6 +57,9 @@
 		204E9D311BB53C9A009046BD /* NSDictionary+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Exts.h"; sourceTree = "<group>"; };
 		204E9D321BB53C9A009046BD /* NSDictionary+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Exts.m"; sourceTree = "<group>"; };
 		204E9D341BB53CF6009046BD /* ELCocoaExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCocoaExts.h; sourceTree = "<group>"; };
+		20918AD11BFB285C00887BF9 /* NSError+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Exts.h"; sourceTree = "<group>"; };
+		20918AD21BFB285C00887BF9 /* NSError+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Exts.m"; sourceTree = "<group>"; };
+		20918AD41BFB287000887BF9 /* ELErrorExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELErrorExts.h; sourceTree = "<group>"; };
 		209E66FE1BDA78190068BFF2 /* ELViewControllerExts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELViewControllerExts.h; sourceTree = "<group>"; };
 		209E66FF1BDA78540068BFF2 /* UIViewController+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Exts.h"; sourceTree = "<group>"; };
 		209E67001BDA78540068BFF2 /* UIViewController+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Exts.m"; sourceTree = "<group>"; };
@@ -171,6 +175,24 @@
 			path = DictionaryExts;
 			sourceTree = "<group>";
 		};
+		20918ACB1BFB1FA200887BF9 /* ELErrorExts */ = {
+			isa = PBXGroup;
+			children = (
+				20918AD41BFB287000887BF9 /* ELErrorExts.h */,
+				20918ACF1BFB281200887BF9 /* ErrorExts */,
+			);
+			path = ELErrorExts;
+			sourceTree = "<group>";
+		};
+		20918ACF1BFB281200887BF9 /* ErrorExts */ = {
+			isa = PBXGroup;
+			children = (
+				20918AD11BFB285C00887BF9 /* NSError+Exts.h */,
+				20918AD21BFB285C00887BF9 /* NSError+Exts.m */,
+			);
+			path = ErrorExts;
+			sourceTree = "<group>";
+		};
 		209E66FC1BDA77A30068BFF2 /* ELViewControllerExts */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				204E9D341BB53CF6009046BD /* ELCocoaExts.h */,
+				20918ACB1BFB1FA200887BF9 /* ELErrorExts */,
 				203AF9421BC80BC50061F372 /* ELGlobalExts */,
 				204E9D161BB536BE009046BD /* ELDictExts */,
 				20F53A9D1BB4F5B900C52E5E /* ELStringExts */,
@@ -415,6 +438,7 @@
 				203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */,
 				20C409BD1BB4093B00F1D36A /* main.m in Sources */,
 				20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */,
+				20918AD31BFB285C00887BF9 /* NSError+Exts.m in Sources */,
 				204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */,
 				204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */,
 				20DFAF231BF187F7007B5D3F /* UITableView+Exts.m in Sources */,

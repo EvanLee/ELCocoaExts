@@ -50,6 +50,11 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'ELCocoaExts/ELDictExts/ELDictExts.h', 'ELCocoaExts/ELDictExts/**/*.h'
   end
 
+  s.subspec 'ErrorExts' do |ss|
+    ss.source_files = 'ELCocoaExts/ELErrorExts/**/*.{h,m}'
+    ss.public_header_files = 'ELCocoaExts/ELErrorExts/ELErrorExts.h', 'ELCocoaExts/ELErrorExts/**/*.h'
+  end
+
   s.subspec 'GlobalExts' do |ss|
     ss.source_files = 'ELCocoaExts/ELGlobalExts/*.{h,m}'
     ss.public_header_files = 'ELCocoaExts/ELGlobalExts/ELScopeExts.h', 'ELCocoaExts/ELGlobalExts/ELExtsmetamacros.h'
