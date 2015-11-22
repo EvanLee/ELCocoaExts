@@ -47,7 +47,7 @@
 {
     return [self.class errorWithDomain:domain
                                   code:code
-                         customInfoKey:NSLocalizedDescriptionKey
+                         customInfoKey:NSLocalizedFailureReasonErrorKey
                                  value:reason];
 }
 
@@ -58,7 +58,7 @@
 {
     return [self.class errorWithDomain:domain
                                   code:code
-                         customInfoKey:NSLocalizedDescriptionKey
+                         customInfoKey:NSLocalizedFailureReasonErrorKey
                                  value:description];
 }
 
