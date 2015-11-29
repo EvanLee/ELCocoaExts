@@ -19,7 +19,14 @@
                       color:(nonnull UIColor *)color
                     opacity:(CGFloat)opacity;
 
-
 - (void)removeShadow;
+
+/**
+ *  可以为某个角添加圆角
+ *
+ *  @param radius  圆角半径
+ *  @param corners 具体要添加的哪个角
+ */
+- (void)addCornersRadius:(CGFloat)radius forCorners:(UIRectCorner)corners;
 
 @end

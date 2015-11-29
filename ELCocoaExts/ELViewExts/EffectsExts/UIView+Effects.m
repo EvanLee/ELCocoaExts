@@ -40,4 +40,14 @@
     self.layer.shadowPath = nil;
 }
 
+- (void)addCornersRadius:(CGFloat)radius forCorners:(UIRectCorner)corners
+{
+    CAShapeLayer * maskLayer = [CAShapeLayer layer];
+    maskLayer.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds
+                                           byRoundingCorners: corners
+                                                 cornerRadii:CGSizeMake(radius, radius)].CGPath;
+    
+    self.layer.mask = maskLayer;
+}
+
 @end
