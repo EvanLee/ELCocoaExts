@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200601111C109D0900CFF433 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = 2006010F1C109D0900CFF433 /* NSDate+Exts.m */; };
 		203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AF9441BC80C740061F372 /* ELScopeExts.m */; };
 		203AFD101BCC9B0D0061F372 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 203AFD0F1BCC9B0D0061F372 /* UIView+AutoLayout.m */; };
 		204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 204E9D1E1BB538C3009046BD /* NSString+DotNetStyle.m */; };
@@ -38,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2006010E1C109D0900CFF433 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Exts.h"; sourceTree = "<group>"; };
+		2006010F1C109D0900CFF433 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
+		200601101C109D0900CFF433 /* ELDateExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELDateExts.h; sourceTree = "<group>"; };
 		203AF9431BC80C740061F372 /* ELScopeExts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELScopeExts.h; sourceTree = "<group>"; };
 		203AF9441BC80C740061F372 /* ELScopeExts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELScopeExts.m; sourceTree = "<group>"; };
 		203AF9481BC8A89F0061F372 /* ELExtsmetamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELExtsmetamacros.h; sourceTree = "<group>"; };
@@ -100,6 +104,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2006010C1C109D0900CFF433 /* ELDateExts */ = {
+			isa = PBXGroup;
+			children = (
+				2006010D1C109D0900CFF433 /* DateExts */,
+				200601101C109D0900CFF433 /* ELDateExts.h */,
+			);
+			path = ELDateExts;
+			sourceTree = "<group>";
+		};
+		2006010D1C109D0900CFF433 /* DateExts */ = {
+			isa = PBXGroup;
+			children = (
+				2006010E1C109D0900CFF433 /* NSDate+Exts.h */,
+				2006010F1C109D0900CFF433 /* NSDate+Exts.m */,
+			);
+			path = DateExts;
+			sourceTree = "<group>";
+		};
 		203AF9421BC80BC50061F372 /* ELGlobalExts */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +304,7 @@
 		20C409BF1BB4096800F1D36A /* ELCocoaExts */ = {
 			isa = PBXGroup;
 			children = (
+				2006010C1C109D0900CFF433 /* ELDateExts */,
 				204E9D341BB53CF6009046BD /* ELCocoaExts.h */,
 				20918ACB1BFB1FA200887BF9 /* ELErrorExts */,
 				203AF9421BC80BC50061F372 /* ELGlobalExts */,
@@ -438,6 +461,7 @@
 				203AF9451BC80C740061F372 /* ELScopeExts.m in Sources */,
 				20C409BD1BB4093B00F1D36A /* main.m in Sources */,
 				20C409BE1BB4093B00F1D36A /* ViewController.m in Sources */,
+				200601111C109D0900CFF433 /* NSDate+Exts.m in Sources */,
 				20918AD31BFB285C00887BF9 /* NSError+Exts.m in Sources */,
 				204E9D2E1BB53934009046BD /* UIView+Events.m in Sources */,
 				204E9D221BB538C3009046BD /* NSString+DotNetStyle.m in Sources */,
