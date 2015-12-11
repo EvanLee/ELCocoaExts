@@ -14,6 +14,7 @@
 - (NSInteger)getYear;
 - (NSInteger)getDay;
 - (NSInteger)getMonth;
+- (NSString *)toWeekdayString;
 
 + (instancetype)dateFromString:(NSString *)dateString withFormat:(NSString *)format;
 + (long)dayDiffWithDate:(NSDate *)date1 sinceDate:(NSDate *)date2;

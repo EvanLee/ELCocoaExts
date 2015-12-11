@@ -42,6 +42,11 @@
     return [comp day];
 }
 
+- (NSString *)toWeekdayString
+{
+    return [self.class dateToWeekdayString:self];
+}
+
 + (instancetype)dateFromString:(NSString *)dateString withFormat:(NSString *)format
 {
     if (dateString == nil || dateString.length == 0
