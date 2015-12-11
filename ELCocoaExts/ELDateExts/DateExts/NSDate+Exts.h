@@ -19,4 +19,13 @@
 + (long)dayDiffWithDate:(NSDate *)date1 sinceDate:(NSDate *)date2;
 + (long)dayDiffWithDateSinceNow:(NSDate *)date;
 
+/**
+ *  根据时间获取星期几
+ *
+ *  @param date 时间
+ *
+ *  @return 返回星期几的字符串
+ */
++ (NSString *)dateToWeekdayString:(NSDate *)date;
+
 @end
