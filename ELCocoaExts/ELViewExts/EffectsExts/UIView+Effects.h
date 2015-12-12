@@ -10,6 +10,8 @@
 
 @interface UIView (Effects)
 
+@property (nonatomic, assign) BOOL tapToHideDarkenView;
+
 - (void)addShadowWithOffset:(CGSize)offset
                       color:(nonnull UIColor *)color
                     opacity:(CGFloat)opacity;
@@ -28,5 +30,8 @@
  *  @param corners 具体要添加的哪个角
  */
 - (void)addCornersRadius:(CGFloat)radius forCorners:(UIRectCorner)corners;
+
+- (void)showDarkenViewWithAnimation:(BOOL)animate;
+- (void)hideDarkenViewWithAnimation:(BOOL)animate;
 
 @end
