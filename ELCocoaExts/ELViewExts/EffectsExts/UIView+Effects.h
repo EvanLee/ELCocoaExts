@@ -10,15 +10,15 @@
 
 @interface UIView (Effects)
 
-@property (nonatomic, assign) BOOL tapToHideDarkenView;
+@property (nonatomic, weak, readonly) UIView *darkenView;
 
 - (void)addShadowWithOffset:(CGSize)offset
-                      color:(nonnull UIColor *)color
+                      color:(UIColor *)color
                     opacity:(CGFloat)opacity;
 
 - (void)addShadowWithOffset:(CGSize)offset
                          cornerRadius:(CGFloat)radius
-                      color:(nonnull UIColor *)color
+                      color:(UIColor *)color
                     opacity:(CGFloat)opacity;
 
 - (void)removeShadow;
@@ -31,7 +31,16 @@
  */
 - (void)addCornersRadius:(CGFloat)radius forCorners:(UIRectCorner)corners;
 
-- (void)showDarkenViewWithAnimation:(BOOL)animate;
-- (void)hideDarkenViewWithAnimation:(BOOL)animate;
+
+- (void)addDarkenViewAnimate:(BOOL)animate
+                     forRect:(CGRect)rect
+                     onTaped:(void (^)(UIView *view))block;
+- (void)addDarkenViewAnimate:(BOOL)animate
+                     onTaped:(void (^)(UIView *view))block;
+
+- (void)addDarkenViewAnimate:(BOOL)animate;
+- (void)removeDarkenViewAnimate:(BOOL)animate;
+
++ (UIView *)darkenViewForRect:(CGRect)rect;
 
 @end

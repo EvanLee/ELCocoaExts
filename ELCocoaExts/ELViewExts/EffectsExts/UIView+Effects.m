@@ -12,7 +12,7 @@
 
 #define DARKENVIEW_TAG 8989898
 
-char DarkenViewTapDismissKey;
+char DarkenViewKey;
 
 @implementation UIView (Effects)
 
@@ -58,25 +58,38 @@ char DarkenViewTapDismissKey;
     self.layer.mask = maskLayer;
 }
 
-- (void)showDarkenViewWithAnimation:(BOOL)animate
++ (UIView *)darkenViewForRect:(CGRect)rect
 {
-    UIView *darkenView = [self viewWithTag:DARKENVIEW_TAG];
+    UIView *darkenView = [[UIView alloc] initWithFrame:rect];
+    [darkenView setBackgroundColor:[UIColor colorWithWhite:.1f alpha:0.5f]];
+    darkenView.tag = DARKENVIEW_TAG;
+    darkenView.alpha = 0.f;
     
+    return darkenView;
+}
+
+- (void)addDarkenViewAnimate:(BOOL)animate
+{
+    [self addDarkenViewAnimate:animate forRect:self.bounds onTaped:nil];
+}
+
+- (void)addDarkenViewAnimate:(BOOL)animate onTaped:(void (^)(UIView *))block
+{
+    [self addDarkenViewAnimate:animate forRect:self.bounds onTaped:block];
+}
+
+- (void)addDarkenViewAnimate:(BOOL)animate forRect:(CGRect)rect onTaped:(void (^)(UIView *view))block
+{
+    UIView *darkenView = self.darkenView;
+
     if (!darkenView) {
-        darkenView = [[UIView alloc] initWithFrame:self.bounds];
-        [darkenView setBackgroundColor:[UIColor colorWithWhite:.1f alpha:0.5f]];
-        darkenView.tag = DARKENVIEW_TAG;
-        darkenView.alpha = 0.f;
+        darkenView = [self.class darkenViewForRect:rect];
         [self addSubview:darkenView];
-        
-        __typeof (&*self) __weak weakSelf = self;
-        [darkenView setTapActionWithBlock:^(UIView *view) {
-            if (weakSelf.tapToHideDarkenView) {
-                [weakSelf hideDarkenViewWithAnimation:animate];
-            }
-        }];
+        self.darkenView = darkenView;
     }
     
+    [darkenView setTapActionWithBlock:block];
+    darkenView.frame = rect;
     
     if (animate) {
         [UIView animateWithDuration:.3
@@ -88,35 +101,40 @@ char DarkenViewTapDismissKey;
     }
 }
 
-- (void)hideDarkenViewWithAnimation:(BOOL)animate
+- (void)removeDarkenViewAnimate:(BOOL)animate
 {
-    UIView *darkenView = [self viewWithTag:DARKENVIEW_TAG];
+    if (!self.darkenView) {
+        return;
+    }
+    
     if (!animate) {
-        [darkenView removeFromSuperview];
+        [self.darkenView removeFromSuperview];
+        self.darkenView = nil;
     } else {
+        __typeof (&*self) __weak weakSelf = self;
         [UIView animateWithDuration:.3
                          animations:^{
-                             darkenView.alpha = 0.f;
+                             weakSelf.darkenView.alpha = 0.f;
                          } completion:^(BOOL finished) {
-                             [darkenView removeFromSuperview];
+                             [weakSelf.darkenView removeFromSuperview];
+                             weakSelf.darkenView = nil;
                          }];
     }
 }
 
 
 #pragma mark - Private Methods
-- (void)setTapToHideDarkenView:(BOOL)tapToHideDarkenView
+- (void)setDarkenView:(UIView *)darkenView
 {
     objc_setAssociatedObject(self,
-                             &DarkenViewTapDismissKey,
-                             @(tapToHideDarkenView),
+                             &DarkenViewKey,
+                             darkenView,
                              OBJC_ASSOCIATION_RETAIN);
 }
 
-- (BOOL)tapToHideDarkenView
+- (UIView *)darkenView
 {
-    NSNumber * b = objc_getAssociatedObject(self, &DarkenViewTapDismissKey);
-    return b ? [b boolValue] : YES;
+   return  objc_getAssociatedObject(self, &DarkenViewKey);
 }
 
 @end
