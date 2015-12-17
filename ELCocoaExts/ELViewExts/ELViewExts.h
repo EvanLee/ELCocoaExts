@@ -12,3 +12,5 @@
 #import "UIView+Effects.h"
 
 #import "UITableView+Exts.h"
+#import "UICollectionView+Exts.h"
+
