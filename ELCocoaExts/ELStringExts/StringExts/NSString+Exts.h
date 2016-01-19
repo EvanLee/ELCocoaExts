@@ -15,6 +15,9 @@
 + (NSString *)stringWithData:(NSData *)data encodingName:(NSString *)encodingName;
 //+ (NSString *)stringWithQueryDictionary:(NSDictionary *)queryDict;
 
+- (NSString*)MD5;
+- (NSData*)MD5Data;
+
 - (BOOL)isAllDigits;
 - (BOOL)isNumeric;
 - (BOOL)containsSystemEmoji;
