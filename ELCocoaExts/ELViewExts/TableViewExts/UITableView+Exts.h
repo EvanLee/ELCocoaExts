@@ -19,6 +19,10 @@
 - (void)registerNibName:(NSString *)nibName;
 - (void)registerNibName:(NSString *)nibName bundle:(NSBundle *)bundleOrNil;
 
+- (void)registerHeaderFooterNibClass:(Class)className;
+- (void)registerHeaderFooterNibName:(NSString *)nibName;
+- (void)registerHeaderFooterClass:(Class)cellClass;
+
 /**
  *  注册重用类，默认采用类名做reuser identfer
  *

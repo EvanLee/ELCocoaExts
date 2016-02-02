@@ -18,6 +18,23 @@
     [self registerNibName:nibName];
 }
 
+- (void)registerHeaderFooterNibClass:(Class)className
+{
+    NSString *nibName = NSStringFromClass(className);
+    
+    [self registerHeaderFooterNibName:nibName];
+}
+
+- (void)registerHeaderFooterNibName:(NSString *)nibName
+{
+    [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forHeaderFooterViewReuseIdentifier:nibName];
+}
+
+- (void)registerHeaderFooterClass:(Class)cellClass
+{
+    [self registerClass:cellClass forHeaderFooterViewReuseIdentifier:NSStringFromClass(cellClass)];
+}
+
 - (void)registerNibName:(NSString *)nibName bundle:(NSBundle *)bundleOrNil
 {
     [self registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:nibName];
