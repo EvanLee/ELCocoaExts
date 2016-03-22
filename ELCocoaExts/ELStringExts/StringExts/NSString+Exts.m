@@ -116,6 +116,8 @@
     return dic;
 }
 
+#pragma mark - EL_Cryptogram
+
 - (NSString*)MD5
 {
     const char *ptr = [self UTF8String];
@@ -141,6 +143,18 @@
     NSData	*data = [NSData dataWithBytes:(const void *)md5Buffer length:sizeof(unsigned char)*CC_MD5_DIGEST_LENGTH];
     
     return data;
+}
+
+- (NSString *)encodeToBase64
+{
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    return [data base64EncodedStringWithOptions:0];
+}
+
+- (NSString *)decodeFromBase64
+{
+    NSData *data64 = [[NSData alloc] initWithBase64EncodedString:self options:0];
+    return [[NSString alloc] initWithData:data64 encoding:NSUTF8StringEncoding];
 }
 
 @end

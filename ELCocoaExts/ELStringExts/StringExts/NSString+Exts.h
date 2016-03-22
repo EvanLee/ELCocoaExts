@@ -15,13 +15,19 @@
 + (NSString *)stringWithData:(NSData *)data encodingName:(NSString *)encodingName;
 //+ (NSString *)stringWithQueryDictionary:(NSDictionary *)queryDict;
 
-- (NSString*)MD5;
-- (NSData*)MD5Data;
-
 - (BOOL)isAllDigits;
 - (BOOL)isNumeric;
 - (BOOL)containsSystemEmoji;
 
 - (id)toJSONValue;
+
+@end
+
+@interface NSString (EL_Cryptogram)
+
+- (NSString *)encodeToBase64;
+- (NSString *)decodeFromBase64;
+- (NSString*)MD5;
+- (NSData*)MD5Data;
 
 @end
